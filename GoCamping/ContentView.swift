@@ -7,20 +7,23 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
+enum Screen {
+  case name
+  case devices
+  case speaker
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+struct ContentView: View {
+  @State var screen: Screen = .name
+  
+  var body: some View {
+    switch screen {
+    case .name:
+      NameInputView(screen: $screen)
+    case .devices:
+      DevicesListView(screen: $screen)
+    case .speaker:
+      SpeakerView(screen: $screen)
     }
+  }
 }

@@ -7,18 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		724052712924B94000D96CF8 /* NIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724052702924B94000D96CF8 /* NIService.swift */; };
 		72E1E558291EE99A00B06A1F /* GoCampingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E1E557291EE99A00B06A1F /* GoCampingApp.swift */; };
 		72E1E55A291EE99A00B06A1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E1E559291EE99A00B06A1F /* ContentView.swift */; };
 		72E1E55C291EE99B00B06A1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72E1E55B291EE99B00B06A1F /* Assets.xcassets */; };
 		72E1E55F291EE99B00B06A1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72E1E55E291EE99B00B06A1F /* Preview Assets.xcassets */; };
+		72E1E566291EE9B900B06A1F /* MCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E1E565291EE9B900B06A1F /* MCService.swift */; };
+		72E1E56A291EE9E400B06A1F /* DevicesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E1E569291EE9E400B06A1F /* DevicesListView.swift */; };
+		72E1E56C2920F9E000B06A1F /* NameInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E1E56B2920F9E000B06A1F /* NameInputView.swift */; };
+		72E1E56E2922C43B00B06A1F /* SpeakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E1E56D2922C43A00B06A1F /* SpeakerView.swift */; };
+		72E1E5702923ACB400B06A1F /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E1E56F2923ACB400B06A1F /* AudioService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		724052702924B94000D96CF8 /* NIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIService.swift; sourceTree = "<group>"; };
+		72CEE13E2923E60A00BA77F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		72E1E554291EE99A00B06A1F /* GoCamping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoCamping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E1E557291EE99A00B06A1F /* GoCampingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoCampingApp.swift; sourceTree = "<group>"; };
 		72E1E559291EE99A00B06A1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		72E1E55B291EE99B00B06A1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72E1E55E291EE99B00B06A1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		72E1E565291EE9B900B06A1F /* MCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCService.swift; sourceTree = "<group>"; };
+		72E1E569291EE9E400B06A1F /* DevicesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesListView.swift; sourceTree = "<group>"; };
+		72E1E56B2920F9E000B06A1F /* NameInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameInputView.swift; sourceTree = "<group>"; };
+		72E1E56D2922C43A00B06A1F /* SpeakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerView.swift; sourceTree = "<group>"; };
+		72E1E56F2923ACB400B06A1F /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +64,9 @@
 		72E1E556291EE99A00B06A1F /* GoCamping */ = {
 			isa = PBXGroup;
 			children = (
+				72CEE13E2923E60A00BA77F6 /* Info.plist */,
+				72E1E568291EE9CC00B06A1F /* Views */,
+				72E1E567291EE9BC00B06A1F /* Services */,
 				72E1E557291EE99A00B06A1F /* GoCampingApp.swift */,
 				72E1E559291EE99A00B06A1F /* ContentView.swift */,
 				72E1E55B291EE99B00B06A1F /* Assets.xcassets */,
@@ -65,6 +81,26 @@
 				72E1E55E291EE99B00B06A1F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		72E1E567291EE9BC00B06A1F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				72E1E565291EE9B900B06A1F /* MCService.swift */,
+				72E1E56F2923ACB400B06A1F /* AudioService.swift */,
+				724052702924B94000D96CF8 /* NIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		72E1E568291EE9CC00B06A1F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				72E1E569291EE9E400B06A1F /* DevicesListView.swift */,
+				72E1E56B2920F9E000B06A1F /* NameInputView.swift */,
+				72E1E56D2922C43A00B06A1F /* SpeakerView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72E1E56C2920F9E000B06A1F /* NameInputView.swift in Sources */,
+				72E1E566291EE9B900B06A1F /* MCService.swift in Sources */,
+				724052712924B94000D96CF8 /* NIService.swift in Sources */,
+				72E1E56E2922C43B00B06A1F /* SpeakerView.swift in Sources */,
 				72E1E55A291EE99A00B06A1F /* ContentView.swift in Sources */,
+				72E1E56A291EE9E400B06A1F /* DevicesListView.swift in Sources */,
+				72E1E5702923ACB400B06A1F /* AudioService.swift in Sources */,
 				72E1E558291EE99A00B06A1F /* GoCampingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,11 +312,16 @@
 				DEVELOPMENT_TEAM = LHL6WHL3CM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoCamping/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Это нужно, чтобы обноружить людей поблизости";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Это нужно, чтобы транслировать ваш голос";
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "Эту нужно, чтобы определить расстояние между собеседниками";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +346,16 @@
 				DEVELOPMENT_TEAM = LHL6WHL3CM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoCamping/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Это нужно, чтобы обноружить людей поблизости";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Это нужно, чтобы транслировать ваш голос";
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "Эту нужно, чтобы определить расстояние между собеседниками";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
